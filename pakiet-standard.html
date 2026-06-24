@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Demo - Pakiet Standard</title>
+    <style>
+        body { font-family: 'Lato', sans-serif; margin: 0; color: #4a4a4a; background-color: #fdfbf7; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; color: #2c2a29; }
+        nav { background: white; padding: 20px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
+        nav a { color: #2c2a29; text-decoration: none; margin: 0 15px; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; }
+        header { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80') center/cover; color: white; padding: 120px 20px; text-align: center; }
+        header h1 { color: white; font-size: 3.5rem; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        .grid { display: grid; grid-template-columns: 1fr; gap: 30px; max-width: 1100px; margin: -50px auto 50px; padding: 0 20px; }
+        .card { background: white; padding: 40px 30px; border-radius: 8px; text-align: center; box-shadow: 0 15px 30px rgba(0,0,0,0.05); transition: transform 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { font-size: 1.5rem; border-bottom: 2px solid #d4af37; display: inline-block; padding-bottom: 10px; margin-bottom: 20px; }
+        .contact { background: #2c2a29; color: white; text-align: center; padding: 60px 20px; }
+        .contact h2 { color: white; }
+        
+        /* Responsywność */
+        @media (min-width: 768px) {
+            .grid { grid-template-columns: repeat(3, 1fr); }
+            header h1 { font-size: 4.5rem; }
+        }
+        @media (max-width: 600px) {
+            nav a { display: block; margin: 10px 0; }
+            header { padding: 80px 20px; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">O nas</a>
+        <a href="#">Cennik</a>
+        <a href="#">Galeria</a>
+        <a href="#">Kontakt</a>
+    </nav>
+    <header>
+        <h1>Elegancja</h1>
+        <p>Autorskie Studio Fryzjerskie w centrum miasta.</p>
+    </header>
+    <div class="grid">
+        <div class="card">
+            <h3>Strzyżenie</h3>
+            <p>Nowoczesne fryzury dopasowane do kształtu twarzy i Twojego stylu życia.</p>
+        </div>
+        <div class="card">
+            <h3>Koloryzacja</h3>
+            <p>Używamy tylko bezpiecznych, renomowanych farb bez amoniaku.</p>
+        </div>
+        <div class="card">
+            <h3>Pielęgnacja</h3>
+            <p>Głębokie odżywienie włosów zniszczonych i pozbawionych blasku.</p>
+        </div>
+    </div>
+    <div class="contact">
+        <h2>Zarezerwuj wizytę</h2>
+        <p>Pakiet Standard to rozbudowana struktura, idealna do budowania wizerunku premium.</p>
+    </div>
+</body>
+</html>

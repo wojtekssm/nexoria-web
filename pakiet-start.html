@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Demo - Pakiet Start</title>
+    <style>
+        body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; background-color: #f8fafc; color: #334155; }
+        header { background: linear-gradient(135deg, #1e293b, #0f172a); color: white; padding: 80px 20px; text-align: center; }
+        h1 { margin: 0; font-size: 2.5rem; font-weight: 900; letter-spacing: 1px; }
+        .subtitle { font-size: 1.2rem; color: #94a3b8; margin-top: 10px; }
+        .container { max-width: 800px; margin: -40px auto 40px; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); text-align: center; position: relative; z-index: 10; width: 90%; box-sizing: border-box; }
+        .btn { display: inline-block; background: #f97316; color: white; padding: 18px 35px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.1rem; margin-top: 25px; transition: transform 0.3s, box-shadow 0.3s; }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(249, 115, 22, 0.3); }
+        .features { display: flex; flex-direction: column; gap: 20px; margin-top: 30px; text-align: left; }
+        .feature-item { background: #f1f5f9; padding: 20px; border-radius: 8px; border-left: 5px solid #3b82f6; }
+        footer { text-align: center; padding: 20px; color: #64748b; font-size: 0.9em; background: #e2e8f0; }
+        
+        /* Responsywność */
+        @media (min-width: 768px) {
+            .features { flex-direction: row; }
+            .feature-item { flex: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JanKowalski - Serwis</h1>
+        <p class="subtitle">Szybko, tanio i solidnie. Dojazd do klienta 24/7.</p>
+    </header>
+    <div class="container">
+        <h2>Dlaczego my?</h2>
+        <p>Prosta strona wizytówkowa, zaprojektowana po to, by działać błyskawicznie na telefonach. Klient wchodzi i od razu ma pod ręką najważniejsze informacje.</p>
+        
+        <div class="features">
+            <div class="feature-item">
+                <strong>Szybka wycena</strong>
+                <p>Odbieramy telefony do 15 minut.</p>
+            </div>
+            <div class="feature-item">
+                <strong>Gwarancja</strong>
+                <p>Na każdą usługę dajemy 2 lata gwarancji.</p>
+            </div>
+        </div>
+
+        <a href="#" class="btn">Zadzwoń: 123 456 789</a>
+    </div>
+    <footer>
+        To jest strona demonstracyjna z Pakietu Start (500 PLN).
+    </footer>
+</body>
+</html>
