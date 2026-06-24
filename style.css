@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #b1b1b1;
+    --font-family: 'Open Sans', Arial, sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+}
+
+menu {
+    background-color: transparent;
+    padding: 10px;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    font-weight: bold;
+    font-size: 18px;
+    z-index: 1000;
+}
+menu ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url('placeholder_header.jpg');
+    background-size: cover;
+    color: white;
+    width: 100%;
+    height: 100vh;
+}
+header .tint{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+header h1, header p {
+    position: relative;
+    z-index: 2;
+}
+
+#cennik {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#cennik h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#cennik p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+#cennik ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#cennik li {
+    background-color: #fff;
+    border: 1px solid rgba(52, 152, 219, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    padding: 24px 28px;
+    color: #333;
+}
+
+#cennik li strong,
+#cennik li span {
+    display: block;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-top: 10px;
+}
+.price-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cennik li {
+    display: flex;
+    flex-direction: column;
+}
+
+#cennik li strong {
+    color: var(--primary-color);
+}
+
+#kontakt {
+    padding: 80px 20px 100px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#kontakt h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#kontakt .contact-card {
+    background-color: #fff;
+    border: 1px solid rgba(52, 152, 219, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    padding: 30px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#kontakt .contact-card p {
+    margin: 0;
+    color: #555;
+    text-align: center;
+}
+
+#kontakt .contact-card strong {
+    display: block;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.15rem;
+}
+.contact-card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    width: 100%;
+}
+
+.example-websites {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    width: fit-content;
+    padding: 10px 20px;
+    margin-inline: auto;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
