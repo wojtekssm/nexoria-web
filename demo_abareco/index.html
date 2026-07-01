@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontello/css/fontello.css">
+    <title>ABARECO</title>
+</head>
+<body class="light-mode">
+    <header class="text-center position-relative container p-0">
+        <span class="z-index-0 position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></span>
+        <img src="header.jpg" alt="Header Image" class="img-fluid object-fit-cover w-100 z-index--1" style="height: 300px;">
+        <div class="position-absolute top-50 start-50 translate-middle text-white z-index-1">
+            <h1 class="header-text">Stawy Rybne</h1>
+            <p>Bronisław Bartoś</p>
+        </div>
+    </header>
+
+    <div class="container" style="background-color: var(--bg-color);">
+        <section class="settings py-2 d-flex justify-content-end align-items-center">
+            <div class="settings-toolbox d-flex justify-content-end align-items-center gap-2 w-fit-content p-1 rounded" style="background-color: var(--surface-color);">
+                <div class="pl" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Polska wersja językowa strony" onclick="changeLanguage('pl')" ><img src="polishflag.svg" style="height: 20px;"></div>
+            <div class="de" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Niemiecka wersja językowa strony" onclick="changeLanguage('de')" ><img src="germanflag.svg" style="height: 20px;"></div>
+<!-- 
+
+
+
+            <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" 
+            data-bs-toggle="dropdown" aria-expanded="false">Język/Sprache</button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#" onclick="changeLanguage('pl')">Polski</a></li>
+                <li><a class="dropdown-item" href="#" onclick="changeLanguage('de')">Deutsch</a></li>
+            </ul>
+        </div> -->
+
+
+
+
+        <button class="light-button icon-sun p-1 border-0 rounded" style="background-color: var(--bg-color); color: var(--text-color);"></button>
+        <button class="dark-button icon-sun-filled p-1 border-0 rounded" style="background-color: var(--bg-color); color: var(--text-color);"></button>
+            </div>
+        </section>
+<!-- 
+        <section class="introduction">
+            <h3 class="text-center pt-4 introduction-text">Serdecznie państwa zapraszamy nad nasze stawy wędkarskie!</h3>
+            <div class="row g-2">
+                <div class="col-12 col-md-6">
+                    <p class="p-2 rounded-2 h-100 introduction-text" style="background-color: var(--surface-color);">Zapraszamy do rodzinnego wędkowania i aktywnego wypoczynku w naszym gospodarstwie rybacko-agroturystycznym. Nasze stawy powstały w 1987 roku - 38 lat temu, wracają do działalności po 8 latach suszy. Oferujemy łowiska specjalne na stawach w Stokach oraz jeziorach: Mętno (140ha), Ostrów (86ha), Orzechów (39ha) i Czachów (18ha) - idealne miejsca dla miłośników natury i relaksu.</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <p class="p-2 rounded-2 h-100 introduction-text" style="background-color: var(--surface-color);">Nasze gospodarstwo agroturystyczne znajduje się 3 km od Chojny, w sercu Cedyńskiego Parku Krajobrazowego. Dojazd jest łatwy - pociągiem do Chojny, dalej transportem zorganizowanym przez gospodarzy.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="offer">
+            <p class="fs-3 fw-bolder offer-text">Oferujemy:</p>
+            <ul class="d-flex flex-column gap-2 flex-wrap rounded-2 p-2 fs-5 offer-text" style="background-color: var(--surface-color);">
+                <li>strzeżony parking</li>
+                <li>pole namiotowe z naturalnym basenem kąpielowym</li>
+                <li>ciche, spokojne miejsca do wypoczynku</li>
+                <li>WC z umywalką</li>
+                <li>możliwość zamówienia posiłków i napojów</li>
+                <li>woda zdrojowa z własnego źródła</li>
+                <li>przyjazną, wykształconą obsługę</li>
+            </ul>
+            <p class="fst-italic fs-4 text-center offer-text">Zapraszamy do relaksu w przyjaznej atmosferze i atrakcyjnych cenach!</p>
+            <p class="fw-bolder offer-text">Co ważne, nasz chów jest w pełni ekologiczny, prowadzony na naturalnych stawach z roślinnością. Nie korzystamy z żadnych chemikaliów ani sztucznych dodatków. Nasze ryby nie są zatłoczone! Na naszych stawach w Stokach koło Chojny od ponad 38 lat gościmy wędkarzy. Oferujemy trzy wydzielone łowiska z warunkami specjalnymi, parking, pole namiotowe, basen i sanitariaty. Wędkowanie wyłączne z brzegu na spławik, grunt i spinning. Połów dostępny po wykupieniu karty wstępu, złowione ryby można wykupić według naszego cennika.</p>
+        </section>
+
+        <section class="offer-for-experienced">
+            <h4 class="fw-bolder offer-for-experienced-text">Oferta dla doświadczonych wędkarzy</h4>
+            <p class="offer-for-experienced-text">Pasjonatów wędkarstwa o większym doświadczeniu zapraszamy do skorzystania z wyjątkowej możliwości połowów na naszych dzierżawionych jeziorach. Oferujemy dostęp do malowniczych akwenów:</p>
+            <ul class="offer-for-experienced-text">
+                <li>Jezioro Mętno - 136 hektarów</li>
+                <li>Jezioro Ostrów - Stoki - 86 hektarów</li>
+                <li>Jezioro Czachów - 18 hektarów</li>
+                <li>Jezioro Orzechów - 39 hektarów</li>
+            </ul>
+            <p class="fst-italic offer-for-experienced-text">Każde z jezior zapewnia doskonałe warunki do połowu oraz niezapomniane chwile w otoczeniu natury. Zapraszamy do odkrywania nowych wyzwań i czerpania radości z wędkowania na naszych łowiskach!</p>
+        </section> -->
+
+        <section class="lakes">
+            <h3 class="fw-bolder fst-italic text-center lakes-text">Nasze Jeziora</h3>
+            <div class="lake-list row g-2">
+                <!-- <div class="col-12 col-md-6 p-1">
+                <div class="lake-item p-2 rounded-2 h-100 border-top border-5 h-100 d-flex flex-column" style="background-color: var(--surface-color);">
+                    <h4 class="fw-bolder lakes-text">Jezioro Mętno</h4>
+                    <div class="lakes-text">
+                        <p>Jezioro Mętno, o powierzchni 141 ha i maksymalnej głębokości około 4 metrów, leży w centrum Cedyńskiego Parku Krajobrazowego, zaledwie 3 km od Chojny. Otoczone lasami, z ograniczonym dostępem do brzegu,wędkowanie odbywa się głównie z łodzi i pontonów.</p>
+                        <p>W jeziorze można złowić m.in. szczupaki, liny, sandacze, węgorze, karpie, karasie, leszcze i sumy. To jedno z najlepiej zarybionych jezior w województwie zachodniopomorskim.</p>
+                        <p>Nad jeziorem znajduje się parking, a latem organizowane są tu spinningowe zawody wędkarskie. Przed przyjazdem warto sprawdzić aktualne zasady połowów i wymagane zezwolenia.</p>
+                    </div>
+                    <img src="header.jpg" alt="Jezioro Mętno" class="img-fluid w-100 mt-auto rounded-2">
+                </div>
+                </div>
+                <div class="col-12 col-md-6 p-1">
+                <div class="lake-item p-2 rounded-2 h-100 border-top border-5 h-100 d-flex flex-column" style="background-color: var(--surface-color);">
+                    <h4 class="fw-bolder lakes-text">Jezioro Ostrów</h4>
+                    <div class="lakes-text">
+                        <p>Jezioro Ostrów ma powierzchnię 86 ha i maksymalną głębokość 11 m, ze średnią około 5 m. Znajduje się w Cedyńskim Parku Narodowym, 10 km od przejścia granicznego w Krajniku Dolnym.</p>
+                        <p>Można tu łowić szczupaki, sumy, karpie, karasie złociste, okonie, węgorze, liny i inne ryby karpiowate. Połowy odbywają się z brzegu (pomostów), łodzi i pontonów.</p>
+                        <p>Nad jeziorem jest duże pole biwakowe i parking na około 1 ha, plaża kąpielowa oraz możliwość wypożyczenia łodzi wędkarskich. To idealne miejsce na rodzinny wypoczynek także ze zwierzakiem.</p>
+                    </div>
+                    <img src="header.jpg" alt="Jezioro Mętno" class="img-fluid w-100 mt-auto rounded-2">
+                </div>
+                </div>
+                <div class="col-12 col-md-6 p-1">
+                <div class="lake-item p-2 rounded-2 h-100 border-top border-5 h-100 d-flex flex-column" style="background-color: var(--surface-color);">
+                    <h4 class="fw-bolder lakes-text">Jezioro Czachów</h4>
+                    <div class="lakes-text">
+                        <p>Jezioro Czachów o powierzchni 18 ha i maksymalnej głębokości 11 m, położone jest 1 km od jeziora Orzechów. Dojazd od szosy Chojna - Cedynia - Osinów Dolny wynosi 0,5 km.</p>
+                        <p>Można tu łowić szczupaki, sumy, węgorze, okonie, leszcze, liny, karpie i inne ryby karpiowate. Jezioro oferuje około 50 stanowisk wędkarskich z brzegu oraz możliwość połowu z łodzi.</p>
+                        <p>Nad jeziorem znajduje się pole biwakowe, parking i naturalne kąpielisko. Od wiosny do jesieni organizujemy zawody wędkarskie, a teren jest idealny na rodzinny wypoczynek w namiotach i kampingach.</p>
+                    </div>
+                    <img src="header.jpg" alt="Jezioro Mętno" class="img-fluid w-100 mt-auto rounded-2">
+                    </div>
+                    </div>
+                <div class="col-12 col-md-6 p-1">
+                    <div class="lake-item p-2 rounded-2 h-100 border-top border-5 h-100 d-flex flex-column" style="background-color: var(--surface-color);">
+                    <h4 class="fw-bolder lakes-text">Jezioro Orzechów</h4>
+                    <div class="lakes-text">
+                        <p>Jezioro Orzechów ma powierzchnię 42 ha, maksymalną głębokość 22 m i średnią 6 m. Położone jest 12 km od przejścia granicznego w Osinowie Dolnym oraz 6 km od Cedyni.</p>
+                        <p>W jeziorze można złowić szczupaki, okonie, liny, węgorze, sandacze, leszcze, karpie, karasie złociste i inne ryby karpiowate. Połowy prowadzone są z brzegów, nielicznych pomostów oraz ze środków pływających, z możliwością wypożyczenia łodzi.</p>
+                        <p>Od strony wschodniej znajduje się duży parking z ogrodzonym polem namiotowym o powierzchni 1,4 ha, a także urządzone kąpielisko z plażą. W sezonie letnim odbywają się tu spinningowe zawody wędkarskie organizowane przez krajowe i zagraniczne koła wędkarskie.</p>
+                    </div>
+                    <img src="header.jpg" alt="Jezioro Mętno" class="img-fluid w-100 mt-auto rounded-2">
+                </div>
+                </div> -->
+                <div class="col-12 p-1">
+                    <div class="lake-item p-2 rounded-2 h-100 border-top border-5 h-100 d-flex flex-column" style="background-color: var(--surface-color);">
+                        <h4 class="fw-bolder lakes-text">Świąteczny karp</h4>
+                        <div class="lakes-text">
+                            <p>Tradycja, która smakuje najlepiej! Zbliżają się Święta, a wraz z nimi czas rodzinnych spotkań i wyjątkowych smaków. Nic tak nie kojarzy się z wigilijnym stołem jak świeży, złocisty karp! Nasze ryby pochodzą ze sprawdzonych, lokalnych hodowli, gdzie dorastają w czystej wodzie i naturalnych warunkach.</p>
+                            </div>
+            </div>
+        </section>
+
+        <section class="fish-info">
+<!--             <p class="fst-italic fish-info-text">W powyższych jeziorach można złowić imponujące ryby, takie jak szczupaki, okonie, leszcze, sandacze, węgorze, sumy oraz liczne, mniejsze gatunki płociowatych. W sezonie letnim gospodarze nad jeziorami Ostrów i Orzechów udostępniają komfortowe pola do wypoczynku z przyczepami kempingowymi i namiotami, tworząc idealne warunki na relaks w otoczeniu natury.</p>
+            <h3 class="fish-info-text">Sprzedajemy naturalnie hodowane ryby handlowe hodowane bez użycia żadnych chemikaliów - Karpie</h3> -->
+            <h4 class="pt-4 fish-info-text">Jeśli masz pytania lub chcesz zarezerwować miejsce, skontaktuj się z nami:</h4>
+        </section>
+
+        <section class="contact row g-2">
+            <div class="col-12 col-md-4">
+                <p class="text-center h-100 d-flex align-items-center justify-content-center rounded-2 contact-text" style="background-color: var(--surface-color);">Telefon/FAX: <a href="tel:+48914143050">+48 91 414 30 50</a></p>
+            </div>
+            <div class="col-12 col-md-4">
+                <p class="text-center h-100 d-flex align-items-center justify-content-center rounded-2 contact-text" style="background-color: var(--surface-color);">E-Mail:<a href="mailto:abareco@abareco.eu">abareco@abareco.eu</a></p>
+            </div>
+            <div class="col-12 col-md-4">
+                <p class="text-center h-100 d-flex align-items-center justify-content-center rounded-2 contact-text" style="background-color: var(--surface-color);">Adres: Wilkoszyce 4, 74-500 Chojna</p>
+            </div>
+        </section>
+        <section class="mapa row m-2">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2403.4832279813268!2d14.368618!3d52.95772100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTLCsDU3JzI3LjgiTiAxNMKwMjInMDcuMCJF!5e0!3m2!1spl!2spl!4v1767218951587!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <footer class="py-2">
+            <p class="text-center py-4 rounded-2" style="background-color: var(--surface-color);">&copy; 2025 ABARECO. Wszelkie prawa zastrzeżone.</p>
+        </footer>
+    </div>
+    <script src="theme.js"></script>
+    <script src="translation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+</body>
+
+</html>

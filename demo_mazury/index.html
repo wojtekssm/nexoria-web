@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warmia i Mazury</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/assets/herb.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="menu.js"></script>
+</head>
+<body>
+    <div class="full-site-wrapper">
+        
+        <nav>
+            <img  class="nav-logo" src="img/assets/logo.png" alt="">
+            <div data-type="hidden" class="nav-wrapper">
+            
+            <ul>
+                <li><a data-type="inactive" href="index.html"><span class="material-symbols-outlined">home</span><p>Główna</p></a></li>
+                <li><a data-type="inactive" href="#"><span class="material-symbols-outlined">directions_bus</span><p>Komunikacja</p></a></li>
+                <li><a data-type="inactive" href="#"><span class="material-symbols-outlined">forest</span><p>Krajobrazy</p></a></li>
+                <li><a data-type="inactive" href="#"><span class="material-symbols-outlined">contacts_product</span><p>Kontakt</p></a></li>
+                </ul>
+        </div>
+        <img class="herb" src="img/assets/herb.png" alt="Herb Warmińsko Mazurski">
+        <button onclick="menu()" class="menu-button"><span class="material-symbols-outlined" id="menu_icon">menu</span></button>
+        </nav>
+        <header>
+            <div class="header-titles">
+            <h1>WARMIA I MAZURY</h1>
+            <h2>Najlepsze lasy i jeziora</h2>
+            </div>
+                <ul class="header-shortcuts">
+                    <a href="#"><li>Miasta</li></a>
+                    <a href="#"><li>Wycieczki</li></a>
+                    <a href="#"><li>Hotele</li></a>
+                    <a href="#"><li>Restauracje</li></a>
+                </ul>
+        </header>
+        <main>
+    <div class="atraction-wrapper">
+        <div class="atarctions-box">
+                <button class="navigate_before" onclick="atraction_scroll_left()"><span class="material-symbols-outlined">navigate_before</span></button>
+                <div class="atractions-details-wrapper" id="attraction_Wrapper">
+
+                <div id="attraction0" class="atractions-details">
+                    <img src="img/events/2.jpg" alt="">
+                    <h1>Roma Music and Dance Concert</h1>
+                    <p>To coroczne wydarzenie, jest prawdziwym świętem kultury i muzyki romskiej. Koncert przyciąga zarówno lokalnych mieszkańców, jak i turystów z całego kraju, którzy przyjeżdżają, aby doświadczyć unikalnej atmosfery i cieszyć się autentycznymi występami muzycznymi i tanecznymi.</p>
+                    <a href="#" class="check-atraction">ZOBACZ</a>
+                </div>
+                <div id="attraction1" class="atractions-details">
+                    <img src="img/events/3.jpg" alt="">
+                    <h1>Mrągowo Country Picnic</h1>
+                    <p>Festiwal przyciąga miłośników muzyki country, westernów i Dzikiego Zachodu z całego świata. Wydarzenie to jest znane z swojej przyjaznej atmosfery, różnorodności muzycznej i licznych atrakcji, takich jak pokazy rodeo, konkursy strzeleckie i jazda konna.</p>
+                    <a href="#" class="check-atraction">ZOBACZ</a>
+                </div>
+                <div id="attraction2" class="atractions-details">
+                    <img src="img/events/4.jpg" alt="">
+                    <h1>Ostróda Reggae Festival</h1>
+                    <p>To jest jedno z najważniejszych wydarzeń muzycznych na Warmii i Mazurach, które odbyło się w sierpniu 2024 roku.Festiwal przyciąga miłośników muzyki reggae z całego świata, oferując im możliwość zobaczenia na żywo niektórych z największych gwiazd gatunku.\nOprócz koncertów, festiwal oferuje również warsztaty muzyczne, dyskusje panelowe i szereg innych atrakcji.</p>
+                    <a href="#" class="check-atraction">ZOBACZ</a>
+                </div>
+                </div>
+                <button class="navigate_next" onclick="atraction_scroll_right()"><span class="material-symbols-outlined">navigate_next</span></button>
+            </div>
+        </div>
+        <div class="description-city">
+                <h2>O Warmii i Mazurach</h2>
+                <div class="desc-separator"><hr></div>
+                <p>Warmia i Mazury to malowniczy region w północno-wschodniej Polsce. Jest tam bardzo dużo jezior, a największe z nich to Mamry, Śniardwy, Niegocin, Orzysz, Jagodne i Tałty. Warmia i Mazury są położone w północno-wschodniej części kraju, a województwo liczy ponad 1,42 miliona mieszkańców. Powierzchnia tego województwa wynosi 24 173 km². Siedzibą wojewody tego województwa jest miasto Olsztyn. To piękna kraina, często odwiedzana przez turystów, którzy cenią sobie ciszę i spokój</p>
+                </div>
+        <div class="cities-main-grid">
+            <h1>Największe miasta</h1>
+            <div class="cities-top">
+
+                <a href="index.php?site=details&n=1">
+                <div class="grid-city" style="background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('img/assets/cities/1.jpg');">
+                <h1>OLSZTYN</h1>
+                <span class="grid-city-vintage"></span>
+                </div>
+                </a>
+
+                <a href="index.php?site=details&n=3">
+                <div class="grid-city" style="background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('img/assets/cities/2.jpg');">
+                <span class="grid-city-vintage"></span>    
+                <h1>ELBLĄG</h1>
+                </div>
+                </a>
+
+            </div>
+            <div class="cities-bottom">
+
+                <a href="index.php?site=details&n=4">
+                <div class="grid-city" style="background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('img/assets/cities/3.jpg');">
+                    <span class="grid-city-vintage"></span>    
+                    <h1>EŁK</h1>
+                </div>
+                </a>
+
+                <a href="index.php?site=details&n=5">
+                <div class="grid-city" style="background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('img/assets/cities/4.jpg');">
+                    <span class="grid-city-vintage"></span>
+                    <h1>IŁAWA</h1>
+                </div>
+                </a>
+
+                <a href="index.php?site=details&n=6">
+                <div class="grid-city" style="background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('img/assets/cities/5.jpg');">
+                    <span class="grid-city-vintage"></span>
+                    <h1>OSTRÓDA</h1>
+                </div>
+                </a>
+            </div>
+        </div>
+        </main>
+    </div>
+</main>
+<script src="scroll.js"></script>
+    </div>
+    <footer>
+&copy 2023 H.O.W.M
+    </footer>
+</body>
+</html>

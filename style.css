@@ -171,6 +171,9 @@ footer { padding: 80px 20px 40px; border-top: 1px solid var(--bg-secondary); }
 .contact-form form{
     max-width: 100%;
 }
+.contact-form form textarea {
+    resize: none;
+}
 form { display: flex; flex-direction: column; gap: 15px; }
 input, textarea {
     width: 100%; padding: 15px;
