@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITPOL - Kalendarz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo" style="text-decoration: none; color: white; font-size: 1.5rem; font-weight: bold;">
+    LOGO
+</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+            <ul class="navbar__menu slide-out-menu">
+                <li class="navbar__item"><a href="home.html" class="navbar__links">Home</a></li>
+                <li class="navbar__item"><a href="zlecenia.html" class="navbar__links">Zlecenia</a></li>
+                <li class="navbar__item"><a href="zarzadzanie.html" class="navbar__links">Zarządzanie</a></li>
+                <li class="navbar__item"><a href="kalendarz.html" class="navbar__links active">Kalendarz</a></li>
+                <li class="navbar__item"><a href="klienci.html" class="navbar__links">Klienci</a></li>
+                <li class="navbar__item"><a href="magazyn.html" class="navbar__links">Magazyn</a></li>
+                <li class="navbar__item"><a href="ustawieniakonta.html" class="navbar__links">Ustawienia konta</a></li>
+                <li class="navbar__item"><a href="index.html" class="navbar__links logout">Wyloguj</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="main__container" style="max-width: 800px;">
+            <div class="main__content">
+                <h1>Kalendarz</h1>
+                <p>Harmonogram spotkań z klientami.</p>
+                
+                <div style="background: #1f1f1f; padding: 40px; border-radius: 10px; border: 1px solid #444; margin-top: 20px; text-align: center;">
+                    <h3 style="color: #888;">[ Moduł widoku kalendarza ]</h3>
+                    <p style="font-size: 0.9em; color: #555; margin-top: 10px;">Interfejs demonstracyjny.</p>
+                    <button style="margin-top: 30px;" onclick="alert('Demo: Dodawanie zdarzeń wyłączone.')">+ Zaplanuj spotkanie</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="menu.js"></script>
+</body>
+</html>

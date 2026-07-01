@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITPOL - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo" style="text-decoration: none; color: white; font-size: 1.5rem; font-weight: bold;">
+    LOGO
+</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu slide-out-menu">
+                <li class="navbar__item"><a href="home.html" class="navbar__links active">Home</a></li>
+                <li class="navbar__item"><a href="zlecenia.html" class="navbar__links">Zlecenia</a></li>
+                <li class="navbar__item"><a href="zarzadzanie.html" class="navbar__links">Zarządzanie</a></li>
+                <li class="navbar__item"><a href="kalendarz.html" class="navbar__links">Kalendarz</a></li>
+                <li class="navbar__item"><a href="klienci.html" class="navbar__links">Klienci</a></li>
+                <li class="navbar__item"><a href="magazyn.html" class="navbar__links">Magazyn</a></li>
+                <li class="navbar__item"><a href="ustawieniakonta.html" class="navbar__links">Ustawienia konta</a></li>
+                <li class="navbar__item"><a href="index.html" class="navbar__links logout">Wyloguj</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main">
+        <!-- Poszerzamy kontener, aby zmieścił dane z panelu -->
+        <div class="main__container" style="max-width: 800px;">
+            <div class="main__content">
+                <h1>Panel administracyjny (Demo)</h1>
+                <h2>Witaj, Mateusz Wojciechowski</h2>
+                <p style="color: #f77062; font-weight: bold; margin-bottom: 30px;">Twoja rola: Agent</p>
+                
+                <!-- Stylowany panel akcji bez bazy danych -->
+                <div style="background: #1f1f1f; padding: 20px; border-radius: 10px; border: 1px solid #444; margin: 0 auto; max-width: 500px;">
+                    <form id="demo-verification-form" style="margin: 0; padding: 0; background: transparent;">
+                        <label style="display: block; margin-bottom: 10px; color: white;">Dodaj email pracownika do weryfikacji:</label>
+                        <input type="email" name="email" required placeholder="Wpisz adres email">
+                        <button type="submit">Dodaj do weryfikacji</button>
+                    </form>
+                    
+                    <!-- Ukryty komunikat o sukcesie (pokazywany przez JS) -->
+                    <div id="success-msg" style="display: none; margin-top: 15px; color: #2ecc71; font-weight: bold;">
+                        Email został dodany do weryfikacji!
+                    </div>
+                </div>      
+            </div>
+        </div>
+    </div>
+
+<script src="menu.js"></script>
+    <script>
+        // Symulacja wysyłania formularza bez odświeżania strony
+        document.getElementById('demo-verification-form').addEventListener('submit', function(e) {
+            e.preventDefault(); 
+            const msg = document.getElementById('success-msg');
+            msg.style.display = 'block'; 
+            
+            // Ukryj po 3 sekundach
+            setTimeout(() => {
+                msg.style.display = 'none';
+                e.target.reset(); // Wyczyść pole input
+            }, 3000);
+        });
+    </script>
+</body>
+</html>

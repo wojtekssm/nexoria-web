@@ -3,62 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITPOL</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-
+    <title>ITPOL - Logowanie (Demo)</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="navbar">
-    <div class="navbar__container">
-        <a href="index.html" id="navbar__logo">
-            <img src="zdjecia/logox2.png" alt="Logo ITPOL" id="logo-img">
-        </a>
-        <div class="navbar__toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+    <!-- Nawigacja zgodna z Twoim CSS -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo" style="text-decoration: none; color: white; font-size: 1.5rem; font-weight: bold;">
+    LOGO
+</a>
+            
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            
+            <!-- Klasa "slide-out-menu" dodana dla kompatybilności z Twoim app.js -->
+            <ul class="navbar__menu slide-out-menu">
+                <li class="navbar__item"><a href="home.html" class="navbar__links">Home</a></li>
+                <li class="navbar__item"><a href="zlecenia.html" class="navbar__links">Zlecenia</a></li>
+                <li class="navbar__item"><a href="zarzadzanie.html" class="navbar__links">Zarządzanie</a></li>
+                <li class="navbar__item"><a href="kalendarz.html" class="navbar__links">Kalendarz</a></li>
+                <li class="navbar__item"><a href="klienci.html" class="navbar__links">Klienci</a></li>
+                <li class="navbar__item"><a href="magazyn.html" class="navbar__links">Magazyn</a></li>
+                <li class="navbar__item"><a href="ustawieniakonta.html" class="navbar__links">Ustawienia konta</a></li>
+            </ul>
         </div>
-        <ul class="navbar__menu">
-            <li class="navbar__item"><a href="index.html" class="navbar__links">Home</a></li>
-            <li class="navbar__item"><a href="#" class="navbar__links">Zlecenia</a></li>
-            <li class="navbar__item"><a href="#" class="navbar__links">Zarządzanie</a></li>
-            <li class="navbar__item"><a href="#" class="navbar__links">Kalendarz</a></li>
-            <li class="navbar__item"><a href="#" class="navbar__links">Klienci</a></li>
-            <li class="navbar__item"><a href="#" class="navbar__links">Magazyn</a></li>
-            <li class="navbar__item"><a href="#" class="navbar__links">Ustawienia konta</a></li>
-        </ul>
-    </div>
-</nav>
+    </nav>
 
-
-
+    <!-- Kontener zgodny z Twoim CSS -->
     <div class="main">
         <div class="main__container">
             <div class="main__content">
-                <h1>ITPOL</h1>
-                <h2>Zaloguj się lub zarejestruj</h2>
+                <h2>ITPOL</h2>
+                <h3>Zaloguj się lub zarejestruj</h3>
                 <p>Strona administracyjna, zaloguj się lub zarejestruj, aby uzyskać dostęp do usług pracownika</p>
                 
-                <h3>Logowanie</h3>
-                <form action="#" method="POST">
-                    <input type="email" name="email" placeholder="E-mail" required>
-                    <input type="password" name="password" placeholder="Hasło" required>
-                    <button type="submit" class="main__btn">Zaloguj się</button>
+                <h4>Logowanie</h4>
+                <form id="demo-login-form">
+                    <input type="email" placeholder="E-mail" value="demo@itpol.pl" required>
+                    <input type="password" placeholder="Hasło" value="demo123" required>
+                    <button type="submit">Zaloguj się</button>
                 </form>
-                
-                <h3>Rejestracja</h3>
-                <form action="#" method="POST">
-                    <input type="text" name="imie" placeholder="Imię" required>
-                    <input type="text" name="nazwisko" placeholder="Nazwisko" required>
-                    <input type="email" name="email" placeholder="E-mail" required>
-                    <input type="password" name="password" placeholder="Hasło" required>
-                    <button type="submit" name="register" class="main__btn">Zarejestruj się</button>
+
+                <hr style="border: 0; border-top: 1px solid #444; margin: 20px 0;">
+
+                <h4>Rejestracja</h4>
+                <form id="demo-register-form">
+                    <input type="text" placeholder="Imię" required>
+                    <input type="text" placeholder="Nazwisko" required>
+                    <input type="email" placeholder="E-mail" required>
+                    <input type="password" placeholder="Hasło" required>
+                    <button type="button" onclick="alert('Wersja Demo: Rejestracja wyłączona.')">Zarejestruj się</button>
                 </form>
             </div>
         </div>
     </div>
-    
+
+    <!-- Pamiętaj, aby plik app.js (ten od menu) był dołączony -->
     <script src="menu.js"></script>
+    <script>
+        // Ominięcie logowania
+        document.getElementById('demo-login-form').addEventListener('submit', function(e) {
+            e.preventDefault(); 
+            window.location.href = 'home.html'; 
+        });
+    </script>
 </body>
 </html>

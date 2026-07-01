@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITPOL - Zlecenia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+           <a href="index.html" id="navbar__logo" style="text-decoration: none; color: white; font-size: 1.5rem; font-weight: bold;">
+    LOGO
+</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+            <ul class="navbar__menu slide-out-menu">
+                <li class="navbar__item"><a href="home.html" class="navbar__links">Home</a></li>
+                <li class="navbar__item"><a href="zlecenia.html" class="navbar__links active">Zlecenia</a></li>
+                <li class="navbar__item"><a href="zarzadzanie.html" class="navbar__links">Zarządzanie</a></li>
+                <li class="navbar__item"><a href="kalendarz.html" class="navbar__links">Kalendarz</a></li>
+                <li class="navbar__item"><a href="klienci.html" class="navbar__links">Klienci</a></li>
+                <li class="navbar__item"><a href="magazyn.html" class="navbar__links">Magazyn</a></li>
+                <li class="navbar__item"><a href="ustawieniakonta.html" class="navbar__links">Ustawienia konta</a></li>
+                <li class="navbar__item"><a href="index.html" class="navbar__links logout">Wyloguj</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="main__container" style="max-width: 800px;">
+            <div class="main__content">
+                <h1>Zlecenia</h1>
+                <p>Lista aktywnych i zakończonych projektów (Wersja Demo).</p>
+                
+                <div style="background: #1f1f1f; padding: 20px; border-radius: 10px; border: 1px solid #444; margin-top: 20px;">
+                    <div style="background: #222; padding: 15px; border-radius: 6px; margin-bottom: 10px; border: 1px solid #333; text-align: left;">
+                        <h4 style="color: #f77062; margin-bottom: 5px;">#001 - Wizytówka dla dewelopera (Szczecin)</h4>
+                        <p style="font-size: 0.9rem; color: #ccc;">Status: <span style="color: #2ecc71;">W toku</span></p>
+                    </div>
+                    <div style="background: #222; padding: 15px; border-radius: 6px; margin-bottom: 10px; border: 1px solid #333; text-align: left;">
+                        <h4 style="color: #f77062; margin-bottom: 5px;">#002 - Sklep e-commerce</h4>
+                        <p style="font-size: 0.9rem; color: #ccc;">Status: <span style="color: #e74c3c;">Oczekujące</span></p>
+                    </div>
+                    <button style="margin-top: 15px;" onclick="alert('Demo: Dodawanie zleceń wyłączone.')">Dodaj nowe zlecenie</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="menu.js"></script>
+</body>
+</html>

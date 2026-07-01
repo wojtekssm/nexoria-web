@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITPOL - Klienci</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo" style="text-decoration: none; color: white; font-size: 1.5rem; font-weight: bold;">
+    LOGO
+</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+            <ul class="navbar__menu slide-out-menu">
+                <li class="navbar__item"><a href="home.html" class="navbar__links">Home</a></li>
+                <li class="navbar__item"><a href="zlecenia.html" class="navbar__links">Zlecenia</a></li>
+                <li class="navbar__item"><a href="zarzadzanie.html" class="navbar__links">Zarządzanie</a></li>
+                <li class="navbar__item"><a href="kalendarz.html" class="navbar__links">Kalendarz</a></li>
+                <li class="navbar__item"><a href="klienci.html" class="navbar__links active">Klienci</a></li>
+                <li class="navbar__item"><a href="magazyn.html" class="navbar__links">Magazyn</a></li>
+                <li class="navbar__item"><a href="ustawieniakonta.html" class="navbar__links">Ustawienia konta</a></li>
+                <li class="navbar__item"><a href="index.html" class="navbar__links logout">Wyloguj</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="main__container" style="max-width: 800px;">
+            <div class="main__content">
+                <h1>Baza Klientów</h1>
+                <p>Lista firm i zarządzanie usługami.</p>
+                
+                <div style="background: #1f1f1f; padding: 20px; border-radius: 10px; border: 1px solid #444; margin-top: 20px;">
+                    <form id="demo-client-form" style="margin: 0; padding: 0; background: transparent;">
+                        <input type="text" placeholder="Nazwa Firmy / Klienta" required>
+                        <input type="text" placeholder="Nazwa Usługi (np. Hosting)" required>
+                        <button type="submit" style="margin-top: 10px;">Zapisz klienta (Demo)</button>
+                    </form>
+                    <div id="client-msg" style="display: none; margin-top: 15px; color: #2ecc71; font-weight: bold;">
+                        Zapisano poprawnie!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="menu.js"></script>
+    <script>
+        document.getElementById('demo-client-form').addEventListener('submit', function(e) {
+            e.preventDefault(); 
+            const msg = document.getElementById('client-msg');
+            msg.style.display = 'block';
+            setTimeout(() => { msg.style.display = 'none'; e.target.reset(); }, 3000);
+        });
+    </script>
+</body>
+</html>

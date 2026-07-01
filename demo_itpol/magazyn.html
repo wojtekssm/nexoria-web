@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITPOL - Magazyn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo" style="text-decoration: none; color: white; font-size: 1.5rem; font-weight: bold;">
+    LOGO
+</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+            <ul class="navbar__menu slide-out-menu">
+                <li class="navbar__item"><a href="home.html" class="navbar__links">Home</a></li>
+                <li class="navbar__item"><a href="zlecenia.html" class="navbar__links">Zlecenia</a></li>
+                <li class="navbar__item"><a href="zarzadzanie.html" class="navbar__links">Zarządzanie</a></li>
+                <li class="navbar__item"><a href="kalendarz.html" class="navbar__links">Kalendarz</a></li>
+                <li class="navbar__item"><a href="klienci.html" class="navbar__links">Klienci</a></li>
+                <li class="navbar__item"><a href="magazyn.html" class="navbar__links active">Magazyn</a></li>
+                <li class="navbar__item"><a href="ustawieniakonta.html" class="navbar__links">Ustawienia konta</a></li>
+                <li class="navbar__item"><a href="index.html" class="navbar__links logout">Wyloguj</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="main__container" style="max-width: 800px;">
+            <div class="main__content">
+                <h1>Magazyn</h1>
+                <p>Zarządzanie zasobami fizycznymi.</p>
+                
+                <div style="background: #1f1f1f; padding: 20px; border-radius: 10px; border: 1px solid #444; margin-top: 20px;">
+                    <div style="background: #222; padding: 15px; border-radius: 6px; margin-bottom: 10px; border: 1px solid #333; text-align: left;">
+                        <h4 style="color: white; margin-bottom: 5px;">Serwer dedykowany (Rack)</h4>
+                        <p style="font-size: 0.9rem; color: #ccc;">Stan: W użyciu (Projekt #002)</p>
+                    </div>
+                    <div style="background: #222; padding: 15px; border-radius: 6px; margin-bottom: 10px; border: 1px solid #333; text-align: left;">
+                        <h4 style="color: white; margin-bottom: 5px;">Licencje oprogramowania</h4>
+                        <p style="font-size: 0.9rem; color: #ccc;">Dostępnych: 4 sztuki</p>
+                    </div>
+                    <button style="margin-top: 15px;" onclick="alert('Demo: Edycja stanów zablokowana.')">Aktualizuj stany</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="menu.js"></script>
+</body>
+</html>
