@@ -3,127 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warmia i Mazury</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/assets/herb.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="menu.js"></script>
+    <title>Nexoria Web | Profesjonalne Strony WWW</title>
+    <meta name="description" content="Nexoria Web tworzy nowoczesne, responsywne i skuteczne strony internetowe dla firm. Zwiększ widoczność swojej marki dzięki profesjonalnej stronie WWW.">
 </head>
 <body>
-    <div class="full-site-wrapper">
+    <nav id="navbar">
+        <a href="#header" class="logo">Nexoria Web</a>
         
-        <nav>
-            <img  class="nav-logo" src="img/assets/logo.png" alt="">
-            <div data-type="hidden" class="nav-wrapper">
-            
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <menu id="nav-menu">
             <ul>
-                <li><a data-type="inactive" href="index.html"><span class="material-symbols-outlined">home</span><p>Główna</p></a></li>
-                <li><a data-type="inactive" href="#"><span class="material-symbols-outlined">directions_bus</span><p>Komunikacja</p></a></li>
-                <li><a data-type="inactive" href="#"><span class="material-symbols-outlined">forest</span><p>Krajobrazy</p></a></li>
-                <li><a data-type="inactive" href="#"><span class="material-symbols-outlined">contacts_product</span><p>Kontakt</p></a></li>
-                </ul>
-        </div>
-        <img class="herb" src="img/assets/herb.png" alt="Herb Warmińsko Mazurski">
-        <button onclick="menu()" class="menu-button"><span class="material-symbols-outlined" id="menu_icon">menu</span></button>
-        </nav>
-        <header>
-            <div class="header-titles">
-            <h1>WARMIA I MAZURY</h1>
-            <h2>Najlepsze lasy i jeziora</h2>
-            </div>
-                <ul class="header-shortcuts">
-                    <a href="#"><li>Miasta</li></a>
-                    <a href="#"><li>Wycieczki</li></a>
-                    <a href="#"><li>Hotele</li></a>
-                    <a href="#"><li>Restauracje</li></a>
-                </ul>
-        </header>
-        <main>
-    <div class="atraction-wrapper">
-        <div class="atarctions-box">
-                <button class="navigate_before" onclick="atraction_scroll_left()"><span class="material-symbols-outlined">navigate_before</span></button>
-                <div class="atractions-details-wrapper" id="attraction_Wrapper">
+                <li><a href="#header" class="nav-link">Start</a></li>
+                <li><a href="#o-nas" class="nav-link">O nas</a></li>
+                <li><a href="#proces" class="nav-link">Proces</a></li>
+                <li><a href="#realizacje" class="nav-link">Realizacje</a></li>
+                <li><a href="#cennik" class="nav-link">Oferta</a></li>
+                <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+            </ul>
+        </menu>
+    </nav>
 
-                <div id="attraction0" class="atractions-details">
-                    <img src="img/events/2.jpg" alt="">
-                    <h1>Roma Music and Dance Concert</h1>
-                    <p>To coroczne wydarzenie, jest prawdziwym świętem kultury i muzyki romskiej. Koncert przyciąga zarówno lokalnych mieszkańców, jak i turystów z całego kraju, którzy przyjeżdżają, aby doświadczyć unikalnej atmosfery i cieszyć się autentycznymi występami muzycznymi i tanecznymi.</p>
-                    <a href="#" class="check-atraction">ZOBACZ</a>
-                </div>
-                <div id="attraction1" class="atractions-details">
-                    <img src="img/events/3.jpg" alt="">
-                    <h1>Mrągowo Country Picnic</h1>
-                    <p>Festiwal przyciąga miłośników muzyki country, westernów i Dzikiego Zachodu z całego świata. Wydarzenie to jest znane z swojej przyjaznej atmosfery, różnorodności muzycznej i licznych atrakcji, takich jak pokazy rodeo, konkursy strzeleckie i jazda konna.</p>
-                    <a href="#" class="check-atraction">ZOBACZ</a>
-                </div>
-                <div id="attraction2" class="atractions-details">
-                    <img src="img/events/4.jpg" alt="">
-                    <h1>Ostróda Reggae Festival</h1>
-                    <p>To jest jedno z najważniejszych wydarzeń muzycznych na Warmii i Mazurach, które odbyło się w sierpniu 2024 roku.Festiwal przyciąga miłośników muzyki reggae z całego świata, oferując im możliwość zobaczenia na żywo niektórych z największych gwiazd gatunku.\nOprócz koncertów, festiwal oferuje również warsztaty muzyczne, dyskusje panelowe i szereg innych atrakcji.</p>
-                    <a href="#" class="check-atraction">ZOBACZ</a>
-                </div>
-                </div>
-                <button class="navigate_next" onclick="atraction_scroll_right()"><span class="material-symbols-outlined">navigate_next</span></button>
+    <header id="header">
+        <div class="tint"></div>
+        <div class="header-content fade-in">
+            <h1>Cyfrowa wizytówka Twojego biznesu.</h1>
+            <p>Projektujemy strony, które konwertują odwiedzających w klientów.</p>
+            <a href="#cennik" class="cta-button">Sprawdź naszą ofertę</a>
+        </div>
+    </header>
+
+    <section id="o-nas" class="section">
+        <h2 class="fade-in">Poznaj nasz zespół</h2>
+        <p class="section-subtitle fade-in">Zgrany duet, w którym każdy robi to, w czym jest najlepszy.</p>
+        <div class="team-grid">
+            <div class="team-card fade-in">
+                <h3>Mateusz</h3>
+                <span class="role">Agent / Doradca Klienta</span>
+                <p>Jestem na pierwszej linii frontu. Badam Twoje potrzeby biznesowe, doradzam najlepsze rozwiązania i dbam o to, by nasza komunikacja przebiegała płynnie. Mówię językiem korzyści, a nie skomplikowanym żargonem.</p>
+            </div>
+            <div class="team-card fade-in" style="transition-delay: 0.2s;">
+                <h3>Wojtek</h3>
+                <span class="role">Tech Lead / Główny Programista</span>
+                <p>Moim żywiołem jest kod. Odpowiadam za to, by wizja przedstawiona przez Mateusza zamieniła się w superszybką, bezpieczną i nowoczesną stronę internetową. Dbam o techniczne detale, których nie widać gołym okiem.</p>
             </div>
         </div>
-        <div class="description-city">
-                <h2>O Warmii i Mazurach</h2>
-                <div class="desc-separator"><hr></div>
-                <p>Warmia i Mazury to malowniczy region w północno-wschodniej Polsce. Jest tam bardzo dużo jezior, a największe z nich to Mamry, Śniardwy, Niegocin, Orzysz, Jagodne i Tałty. Warmia i Mazury są położone w północno-wschodniej części kraju, a województwo liczy ponad 1,42 miliona mieszkańców. Powierzchnia tego województwa wynosi 24 173 km². Siedzibą wojewody tego województwa jest miasto Olsztyn. To piękna kraina, często odwiedzana przez turystów, którzy cenią sobie ciszę i spokój</p>
-                </div>
-        <div class="cities-main-grid">
-            <h1>Największe miasta</h1>
-            <div class="cities-top">
+    </section>
 
-                <a href="#">
-                <div class="grid-city" style="background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('img/assets/cities/1.jpg');">
-                <h1>OLSZTYN</h1>
-                <span class="grid-city-vintage"></span>
-                </div>
-                </a>
-
-                <a href="#">
-                <div class="grid-city" style="background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('img/assets/cities/2.jpg');">
-                <span class="grid-city-vintage"></span>    
-                <h1>ELBLĄG</h1>
-                </div>
-                </a>
-
+    <section id="proces" class="section process-bg">
+        <h2 class="fade-in">Nasz proces współpracy</h2>
+        <div class="process-grid">
+            <div class="process-step fade-in">
+                <div class="step-number">1</div>
+                <h3>Rozmowa</h3>
+                <p>Ustalamy Twoje cele, grupę docelową i oczekiwania. Zero zobowiązań.</p>
             </div>
-            <div class="cities-bottom">
-
-                <a href="#">
-                <div class="grid-city" style="background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('img/assets/cities/3.jpg');">
-                    <span class="grid-city-vintage"></span>    
-                    <h1>EŁK</h1>
-                </div>
-                </a>
-
-                <a href="#">
-                <div class="grid-city" style="background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('img/assets/cities/4.jpg');">
-                    <span class="grid-city-vintage"></span>
-                    <h1>IŁAWA</h1>
-                </div>
-                </a>
-
-                <a href="#">
-                <div class="grid-city" style="background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('img/assets/cities/5.jpg');">
-                    <span class="grid-city-vintage"></span>
-                    <h1>OSTRÓDA</h1>
-                </div>
-                </a>
+            <div class="process-step fade-in" style="transition-delay: 0.2s;">
+                <div class="step-number">2</div>
+                <h3>Strategia</h3>
+                <p>Dobieramy odpowiedni pakiet i planujemy architekturę strony.</p>
+            </div>
+            <div class="process-step fade-in" style="transition-delay: 0.4s;">
+                <div class="step-number">3</div>
+                <h3>Kodowanie</h3>
+                <p>Przekuwamy projekt w funkcjonalną i responsywną witrynę.</p>
+            </div>
+            <div class="process-step fade-in" style="transition-delay: 0.6s;">
+                <div class="step-number">4</div>
+                <h3>Start</h3>
+                <p>Publikujemy stronę w sieci i testujemy jej wydajność pod kątem SEO.</p>
             </div>
         </div>
-        </main>
-    </div>
-</main>
-<script src="scroll.js"></script>
-    </div>
-    <footer>
-&copy 2023 H.O.W.M
+    </section>
+
+    <section id="realizacje" class="section">
+        <h2 class="fade-in">Nasze realizacje</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-card fade-in">
+                <div class="img-placeholder">Zdjęcie projektu 1</div>
+                <div class="portfolio-info">
+                    <h3>ITPOL</h3>
+                    <a href="demo_itpol/index.html" target="_blank" class="demo-link">Zobacz Demo</a>
+                </div>
+            </div>
+            <div class="portfolio-card fade-in" style="transition-delay: 0.2s;">
+                <div class="img-placeholder">Zdjęcie projektu 2</div>
+                <div class="portfolio-info">
+                    <h3>Przewodnik po Warmii i Mazurach</h3>
+                    <a href="demo_mazury/index.html" target="_blank" class="demo-link">Zobacz Demo</a>
+                </div>
+            </div>
+            <div class="portfolio-card fade-in" style="transition-delay: 0.4s;">
+                <div class="img-placeholder">Zdjęcie projektu 3</div>
+                <div class="portfolio-info">
+                    <h3>Strona dla firmy ABARECO</h3>
+                    <a href="demo_abareco/index.html" target="_blank" class="demo-link">Zobacz Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cennik" class="section">
+        <h2 class="fade-in">Pakiety Wdrożeniowe</h2>
+        <div class="price-grid">
+            <div class="price-card fade-in">
+                <h3>Start</h3>
+                <span class="price">500 PLN</span>
+                <p>Idealne dla rzemiosła i małych usług (Strona typu One-Page).</p>
+                <a href="pakiet-start.html" target="_blank" class="cta-button" style="padding: 10px 20px; font-size: 0.9rem; margin-top: 15px;">Zobacz pokazową stronę</a>
+            </div>
+            <div class="price-card active fade-in" style="transition-delay: 0.2s;">
+                <h3>Standard</h3>
+                <span class="price">1000 PLN</span>
+                <p>Multi-page, responsywność i zaawansowane SEO dla firm.</p>
+                <a href="pakiet-standard.html" target="_blank" class="cta-button" style="padding: 10px 20px; font-size: 0.9rem; margin-top: 15px;">Zobacz pokazową stronę</a>
+            </div>
+            <div class="price-card fade-in" style="transition-delay: 0.4s;">
+                <h3>Premium</h3>
+                <span class="price">2000 PLN</span>
+                <p>Nowoczesne animacje, CMS i pełna personalizacja.</p>
+                <a href="pakiet-premium.html" target="_blank" class="cta-button" style="padding: 10px 20px; font-size: 0.9rem; margin-top: 15px;">Zobacz pokazową stronę</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="section">
+        <h2 class="fade-in">Często zadawane pytania</h2>
+        <div class="faq-container fade-in">
+            <details>
+                <summary>Czy są jakieś ukryte koszty abonamentowe?</summary>
+                <p>Nie. Płacisz nam raz za wykonanie projektu. Jedyne koszty stałe to coroczne odnowienie Twojej własnej domeny oraz hostingu (zazwyczaj to kwoty rzędu 100-200 zł rocznie, które opłacasz u dostawcy).</p>
+            </details>
+            <details>
+                <summary>Czy moja strona będzie działać na telefonach?</summary>
+                <p>Tak, w dzisiejszych czasach to absolutny standard. Każda nasza strona jest w 100% responsywna i wygląda świetnie zarówno na smartfonach, jak i na dużych monitorach.</p>
+            </details>
+            <details>
+                <summary>Ile trwa stworzenie strony internetowej?</summary>
+                <p>Zazwyczaj proces od pierwszego kontaktu do uruchomienia strony w sieci zamykamy w przedziale od 7 do 14 dni, w zależności od tego, jak szybko dostarczysz nam materiały tekstowe i zdjęcia.</p>
+            </details>
+        </div>
+    </section>
+
+    <footer id="kontakt" class="section fade-in">
+        <div class="footer-grid">
+            <div class="contact-info">
+                <h2>Porozmawiajmy o Twoim biznesie</h2>
+                <p>Zadzwoń lub napisz – doradzimy najlepsze rozwiązanie całkowicie za darmo.</p>
+                <strong>kontakt.mikulskiwojciechowski@gmail.com</strong>
+                <p class="phone">+48 Wojtek / +48 Mateusz</p>
+            </div>
+            <div class="contact-form">
+                <form action="https://formspree.io/f/mlgypado" method="POST">
+                    <input type="text" name="name" placeholder="Twoje Imię" required>
+                    <input type="email" name="email" placeholder="Twój Adres E-mail" required>
+                    <textarea name="message" rows="4" placeholder="Opisz krótko swój biznes..." required></textarea>
+                    <button type="submit" class="cta-button form-btn">Wyślij wiadomość</button>
+                </form>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 Nexoria Web. Wszelkie prawa zastrzeżone.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
