@@ -18,7 +18,8 @@ const navMenu = document.getElementById('nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
 
 // Otwieranie/Zamykanie po kliknięciu w hamburger
-hamburger.addEventListener('click', () => {
+hamburger.addEventListener('click', (e) => {
+    e.stopPropagation(); // Zapobiega natychmiastowemu wywołaniu zamknięcia przez kliknięcie w document
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
 });
@@ -29,6 +30,15 @@ navLinks.forEach(link => {
         hamburger.classList.remove('active');
         navMenu.classList.remove('active');
     });
+});
+
+// Zamykanie menu po kliknięciu poza obszar menu i hamburgera
+document.addEventListener('click', (e) => {
+    // Sprawdzamy, czy menu jest otwarte oraz czy kliknięcie nastąpiło POZA menu i POZA hamburgerem
+    if (navMenu.classList.contains('active') && !navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+    }
 });
 
 // 3. Obsługa "wyskakujących kart" ze scrollowaniem (Scroll Reveal)

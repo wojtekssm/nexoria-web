@@ -87,7 +87,7 @@ menu a:hover { color: var(--accent); }
 header {
     position: relative; display: flex; align-items: center; justify-content: center;
     height: 100vh; text-align: center;
-    background-image: url('placeholder_header.jpg');
+    background-image: url('placeholder_header.png');
     background-size: cover; background-position: center; background-attachment: fixed;
 }
 .tint { position: absolute; inset: 0; background: rgba(15, 23, 42, 0.75); }
@@ -123,6 +123,7 @@ p { font-size: 1.2rem; color: #cbd5e1; margin-bottom: 2rem; }
 .portfolio-card { background: var(--bg-secondary); border-radius: 15px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1); transition: 0.3s; }
 .portfolio-card:hover { transform: translateY(-10px); box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
 .img-placeholder { height: 200px; background: #334155; display: flex; align-items: center; justify-content: center; color: #94a3b8; }
+.img-placeholder img { width: 100%; height: 100%; object-fit: cover; }
 .portfolio-info { padding: 25px; text-align: center; }
 .demo-link { display: inline-block; margin-top: 10px; color: var(--accent); text-decoration: none; font-weight: bold; }
 
